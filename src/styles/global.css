@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --marine-blue-hover: hsl(213 73.75% 31.37%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/public/assets/fonts/Ubuntu-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/public/assets/fonts/Ubuntu-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/public/assets/fonts/Ubuntu-Bold.ttf');
+  font-weight: bold;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Ubuntu';
+}
+body {
+  background-color: var(--magnolia);
+}
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+input,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 3.2rem;
+  color: var(--marine-blue);
+}
+.subtitle {
+  margin-bottom: 32px;
+  color: var(--cool-gray);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+}
+.text {
+  font-size: 1.6rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  font-size: 1.6rem;
+  padding: 16px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  main {
+    display: block;
+    height: 100%;
+  }
+  .form__buttons {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+    background-color: var(--white);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.4rem;
+  }
+  .subtitle {
+    margin-bottom: 20px;
+  }
+  .button {
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 1.4rem;
+  }
+}
