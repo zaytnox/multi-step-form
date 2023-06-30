@@ -4,7 +4,7 @@ const StepFive = () => {
   return (
     <div className={styles.card}>
       <img
-        src="/public/assets/images/icon-thank-you.svg"
+        src="/assets/images/icon-thank-you.svg"
         alt="Thank you image"
         className={styles.image}
       />

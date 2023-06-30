@@ -20,7 +20,7 @@ const Plan = ({
         defaultChecked={data.plan.type === plan.type}
       />
       <label htmlFor={plan.id} className={styles.label}>
-        <img src={`/public/assets/images/icon-${plan.type}.svg`} alt="" />
+        <img src={`/assets/images/icon-${plan.type}.svg`} alt="" />
         <div>
           <span>{plan.type}</span>
           {isYearly ? (

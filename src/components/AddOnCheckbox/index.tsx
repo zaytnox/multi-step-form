@@ -13,7 +13,7 @@ const AddOnCheckbox = ({
     <label htmlFor={addOn.id} className={styles.label}>
       <div>
         <div className={styles.checkbox}>
-          <img src="/public/assets/images/icon-checkmark.svg" alt="" />
+          <img src="/assets/images/icon-checkmark.svg" alt="" />
         </div>
         <input
           type="checkbox"

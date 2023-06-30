@@ -10,12 +10,9 @@ const StepsCard = () => {
       <picture className={styles.bg}>
         <source
           media="(max-width: 1000px)"
-          srcSet="/public/assets/images/bg-sidebar-mobile.svg"
+          srcSet="/assets/images/bg-sidebar-mobile.svg"
         />
-        <img
-          src="/public/assets/images/bg-sidebar-desktop.svg"
-          alt="bg steps card"
-        />
+        <img src="/assets/images/bg-sidebar-desktop.svg" alt="bg steps card" />
       </picture>
       <ul>
         {steps.map((_step, index) => {
