@@ -1,0 +1,6 @@
+.button {
+  color: var(--cool-gray);
+}
+.button:hover {
+  color: var(--marine-blue);
+}

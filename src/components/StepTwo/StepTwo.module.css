@@ -1,0 +1,78 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.plans {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--alabaster);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--cool-gray);
+}
+.payment label {
+  transition: color 0.5s;
+}
+.input-checkbox {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  width: 38px;
+  height: 20px;
+  border-radius: 16px;
+  background-color: var(--marine-blue);
+}
+.input-checkbox::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  margin-left: 4px;
+  background-color: var(--white);
+  transition: transform 0.5s;
+}
+.input-checkbox:checked::after {
+  transform: translateX(150%);
+}
+
+.monthly {
+  color: var(--marine-blue);
+}
+.monthly:has(+ .input-checkbox:checked) {
+  color: var(--cool-gray);
+}
+
+.input-checkbox:checked + label {
+  color: var(--marine-blue);
+}
+
+.error {
+  margin-top: 16px;
+  color: var(--strawberry-red);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 1000px) {
+  .plans {
+    flex-direction: column;
+  }
+}

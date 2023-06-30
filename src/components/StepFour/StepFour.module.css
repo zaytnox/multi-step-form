@@ -1,0 +1,91 @@
+.form ul {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--alabaster);
+  border-radius: 16px;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.plan p {
+  font-size: 1.6rem;
+  color: var(--marine-blue);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.plan button {
+  margin-top: 8px;
+  font-size: 1.4rem;
+  color: var(--cool-gray);
+  text-decoration: underline;
+}
+.plan button:hover {
+  color: var(--purplish-blue);
+}
+.plan span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--marine-blue);
+}
+
+.form li:not(:first-child) {
+  padding: 24px;
+  padding-top: 0;
+}
+.addOn p {
+  display: flex;
+  justify-content: space-between;
+  color: var(--cool-gray);
+  font-size: 1.4rem;
+}
+.addOn span {
+  color: var(--marine-blue);
+  font-weight: 500;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--cool-gray);
+  padding: 24px;
+}
+.total span {
+  color: var(--purplish-blue);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .form ul {
+    border-radius: 8px;
+  }
+  .plan {
+    margin: 16px;
+    padding-bottom: 16px;
+  }
+  .plan p {
+    font-size: 1.4rem;
+  }
+  .plan span {
+    font-size: 1.4rem;
+  }
+  .form li:not(:first-child) {
+    padding: 16px;
+    padding-top: 0;
+  }
+  .total {
+    margin-top: 16px;
+    padding: 16px;
+  }
+  .total span {
+    font-size: 1.6rem;
+  }
+}

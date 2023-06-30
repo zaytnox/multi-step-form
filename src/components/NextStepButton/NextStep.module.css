@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--marine-blue);
+  color: var(--white);
+  align-self: end;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.confirm {
+  background-color: var(--purplish-blue);
+}

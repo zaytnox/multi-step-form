@@ -1,0 +1,51 @@
+.label {
+  display: block;
+  width: 100%;
+  min-width: 136px;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding: 16px;
+}
+.label:hover {
+  border-color: var(--purplish-blue);
+  cursor: pointer;
+}
+.label img {
+  margin-bottom: 40px;
+}
+.label span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--marine-blue);
+  text-transform: capitalize;
+}
+.label p {
+  font-size: 1.4rem;
+  color: var(--cool-gray);
+}
+.label p:nth-child(3) {
+  font-size: 1.2rem;
+  color: var(--marine-blue);
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.input-radio {
+  display: none;
+}
+.input-radio:checked + .label {
+  background-color: var(--alabaster);
+  border-color: var(--purplish-blue);
+}
+
+@media (max-width: 1000px) {
+  .label {
+    display: flex;
+    gap: 16px;
+  }
+  .label img {
+    margin: 0;
+  }
+}

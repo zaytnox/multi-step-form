@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--marine-blue);
+}
+.label p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.label.error input {
+  border-color: var(--strawberry-red);
+}
+.label.error span {
+  color: var(--strawberry-red);
+  font-weight: 700;
+}
+.input-text {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  font-family: 'Ubuntu';
+  font-size: 1.6rem;
+  color: var(--marine-blue);
+  font-weight: 500;
+}
+.input-text:focus {
+  border-color: var(--purplish-blue);
+}
+.input-text::placeholder {
+  color: var(--cool-gray);
+}

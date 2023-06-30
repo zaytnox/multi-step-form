@@ -1,0 +1,76 @@
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--cool-gray);
+  border-radius: 8px;
+  padding: 20px;
+}
+.label:hover {
+  cursor: pointer;
+  border-color: var(--purplish-blue);
+}
+.label > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label div span {
+  display: block;
+  font-weight: 700;
+  color: var(--marine-blue);
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+.label p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--cool-gray);
+}
+
+.label input {
+  appearance: none;
+}
+.label > span {
+  color: var(--purplish-blue);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  background-color: var(--white);
+  border-radius: 4px;
+  border: 1px solid var(--cool-gray);
+}
+
+.checkbox:has(+ input:checked) {
+  background-color: var(--purplish-blue);
+  border-color: var(--white);
+}
+
+.label:has(input:checked) {
+  border-color: var(--purplish-blue);
+  background-color: var(--alabaster);
+}
+
+@media (max-width: 768px) {
+  .label {
+    padding: 16px;
+  }
+  .label > div {
+    gap: calc(16px / 2);
+  }
+  .label div span {
+    font-size: 1.4rem;
+  }
+  .label p {
+    font-size: 1.2rem;
+  }
+}

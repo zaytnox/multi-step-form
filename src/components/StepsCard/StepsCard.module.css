@@ -1,0 +1,76 @@
+.bg img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card {
+  width: min-content;
+  position: relative;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 32px;
+  padding: 32px;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.step--number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.active .step--number {
+  background-color: var(--light-blue);
+  color: var(--marine-blue);
+  border-color: transparent;
+}
+
+.step--text span {
+  font-size: 1.4rem;
+  color: var(--pastel-blue);
+}
+.step--text p {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+  .bg img {
+    width: 100%;
+  }
+  .card ul {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    height: min-content;
+  }
+  .step--text {
+    display: none;
+  }
+}
